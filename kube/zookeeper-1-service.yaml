@@ -8,8 +8,9 @@ metadata:
     service: zookeeper
     zookeeper_id: "1"
 spec:
-  type: ClusterIP
-  clusterIP: 10.200.10.31
+#  type: ClusterIP
+#  clusterIP: 10.200.10.31
+  type: LoadBalancer
   ports:
     - name: client
       port: 2181

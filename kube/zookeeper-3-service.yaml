@@ -15,8 +15,8 @@ spec:
       port: 2888
     - name: election
       port: 3888
-  clusterIP: 10.200.10.33
-  type: ClusterIP
+#  clusterIP: 10.200.10.33
+  type: LoadBalancer
   selector:
     name: zookeeper-3
     zookeeper_id: "3"
